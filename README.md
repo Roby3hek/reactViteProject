@@ -1,12 +1,15 @@
 # React + Vite
+# Проект был выполнен в качестве задания на сессии 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект — приложение для учёта личных расходов (Expense Tracker), написанное на React с использованием современных инструментов и библиотек. Оно позволяет добавлять записи о тратах, просматривать их список и получать наглядную статистику.
 
-Currently, two official plugins are available:
+Основные возможности
+Добавление расходов – форма с валидацией (Formik + Yup), выбор даты (react-datepicker), категории, сумма.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Список расходов – таблица с возможностью сортировки/фильтрации (react-table).
 
-## Expanding the ESLint configuration
+Статистика – графики (Chart.js), вероятно, по категориям, дням или месяцам.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Хранение данных – через React Context (ReceiptProvider), данные сохраняются в локальном состоянии (возможно, с использованием localStorage, но из кода это не видно).
+
+Стилизация – TailwindCSS + кастомные стили в index.css.
